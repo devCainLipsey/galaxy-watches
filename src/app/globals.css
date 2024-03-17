@@ -31,3 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+  border-radius: 10px; /* rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to right,
+    #8554c7,
+    #cf0cbc,
+    #8554c7
+  ); /* gradient background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8554c7; /* color of the thumb */
+  border-radius: 10px; /* rounded corners */
+}
