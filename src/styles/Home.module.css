@@ -1,0 +1,16 @@
+/* Home.module.css */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px #8554c7;
+  }
+  50% {
+    box-shadow: 0 0 30px #cf0cbc;
+  }
+  100% {
+    box-shadow: 0 0 15px #8554c7;
+  }
+}
+
+.glowBorder {
+  animation: glow 1.5s infinite alternate;
+}

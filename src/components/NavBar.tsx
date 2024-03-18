@@ -7,8 +7,10 @@ const NavBar: React.FC = () => {
     <nav className="bg-slate-950 py-2 px-20 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
-        <span className="text-white font-bold text-lg">Galaxy Watches</span>
         <PiWatchThin className="text-white ml-2" size={24} />
+        <span className="text-white font-bold text-lg pl-2 ">
+          Galaxy Watches
+        </span>
       </div>
 
       {/* Links */}
