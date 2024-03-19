@@ -1,16 +1,17 @@
 import React from "react";
 import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
+import AboutUsCard from "@/components/AboutUsCard";
 import styles from "@/styles/Home.module.css"; // Import custom CSS module
 
 const Home: React.FC = () => {
   return (
     <>
       <NavBar />
-
       <div className="min-h-screen bg-slate-950 relative">
+        {/* Hero Section */}
         <div className="flex flex-col justify-center items-center">
-          <div className=" w-full h-96 rounded-lg overflow-hidden relative">
+          <div className="w-full h-96 rounded-lg overflow-hidden relative">
             <div className="absolute inset-0 bg-black opacity-50 "></div>
 
             {/* Overlay */}
@@ -24,7 +25,7 @@ const Home: React.FC = () => {
                 Welcome to Galaxy Watches
               </h1>
               <p className="mt-4 text-3xl text-white">
-                Best place in the universe to tell time!
+                Where modern technology meets timeless style
               </p>
 
               <div className="w-64 relative inline-flex group mt-12">
@@ -35,32 +36,78 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
+          {/* Best Sellers Section */}
           <div className="mt-16">
             <h2 className="text-4xl text-white text-center mb-4">
               Best Sellers
             </h2>
             <span className="h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-8">
+            <div className="mt-10 flex flex-wrap justify-center gap-20">
               <WatchCard
-                imageSrc="https://images.unsplash.com/photo-1629582183727-86788aeaef34?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                name="Watch 1"
+                imageSrc="https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                name="TechNova Pro Series"
                 price={100}
                 rating={4}
               />
               <WatchCard
-                imageSrc="https://images.unsplash.com/photo-1629582183727-86788aeaef34?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                name="Watch 2"
+                imageSrc="https://images.unsplash.com/photo-1698729617018-7475086abd54?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                name="Infinity Pulse Tracker"
                 price={150}
                 rating={5}
               />
               <WatchCard
-                imageSrc="https://images.unsplash.com/photo-1629582183727-86788aeaef34?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                name="Watch 3"
+                imageSrc="https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                name="Heritage Navigator"
                 price={120}
                 rating={3}
               />
             </div>
+          </div>
+          {/* About Us Section */}
+          <div className="mt-16 flex justify-center">
+            <AboutUsCard
+              imageSrc="https://images.unsplash.com/photo-1550935268-e9e4bdc7c972?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              heading="About Us"
+              paragraph={
+                <>
+                  <p>
+                    At Galaxy Watches, we transcend the conventional boundaries
+                    of timekeeping, blending cutting-edge technology with
+                    timeless craftsmanship. Our journey began with a vision to
+                    redefine elegance and functionality in the world of
+                    wristwear. Each timepiece we craft is a testament to our
+                    unwavering commitment to excellence, meticulously engineered
+                    to accompany you through every moment of your life's
+                    journey.
+                  </p>
+                  <br />
+                  <p>
+                    Driven by innovation and inspired by the wonders of the
+                    cosmos, our watches seamlessly integrate advanced features
+                    with classic design elements. From sleek and sophisticated
+                    designs to rugged sporty models, our diverse collection
+                    caters to every individual's style and needs. With precision
+                    engineering and attention to detail, Galaxy Watches stand as
+                    a symbol of sophistication and reliability, empowering you
+                    to navigate through the modern world with confidence and
+                    style.
+                  </p>
+                  <br />
+                  <p>
+                    Embrace the fusion of style and technology with Galaxy
+                    Watches, where each timepiece tells a story of innovation
+                    and craftsmanship. Whether you seek a statement accessory
+                    for a formal occasion or a reliable companion for your
+                    active lifestyle, our watches are designed to elevate your
+                    experience and redefine the way you perceive time. Join us
+                    on a journey through the cosmos of horology, where
+                    imagination knows no bounds, and every tick of the clock is
+                    a testament to our commitment to excellence.
+                  </p>
+                </>
+              }
+            />
           </div>
         </div>
       </div>
