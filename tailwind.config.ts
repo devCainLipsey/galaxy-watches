@@ -7,6 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      galaxy: ["Distant Galaxy", "sans-serif"],
+    },
     extend: {
       animation: {
         "spin-slow": "spin 5s linear infinite",

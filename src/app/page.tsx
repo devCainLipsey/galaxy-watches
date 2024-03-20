@@ -3,7 +3,6 @@ import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
 import AboutUsCard from "@/components/AboutUsCard";
 import ReviewSlider from "@/components/ReviewSlider";
-import styles from "@/styles/Home.module.css"; // Import custom CSS module
 
 const Home: React.FC = () => {
   return (
@@ -22,7 +21,7 @@ const Home: React.FC = () => {
               className="w-full h-full object-cover rounded-md"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <h1 className="text-6xl font-bold text-center text-white">
+              <h1 className="text-6xl  font-galaxy text-center text-white">
                 Welcome to Galaxy Watches
               </h1>
               <p className="mt-4 text-3xl text-white">
@@ -124,10 +123,10 @@ const Home: React.FC = () => {
           <span className="h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
 
           {/* Review Slider Section */}
-          <div className=" mt-40 relative">
-            <div className="absolute inset-0">
+          <div className=" mt-40 relative ml-96">
+            <div className="absolute inset-0 ml-20">
               <img
-                src="https://images.unsplash.com/photo-1624165034698-a3a02b915c98?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Background"
                 className="w-full h-full object-cover rounded-md scale-150   -translate-x-1/2"
               />

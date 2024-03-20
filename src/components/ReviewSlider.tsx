@@ -19,7 +19,7 @@ const reviews: Review[] = [
     header: "Amazing Product",
     author: "Emily Johnson",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum risus ac velit ultricies.",
+      "\"I've been using my Galaxy Watch for a week now, and I'm blown away by its features! From tracking my workouts to receiving notifications seamlessly, this watch has become an essential part of my daily routine. Plus, the sleek design earns me compliments everywhere I go. Highly recommend!\"",
     rating: 5,
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1691784778805-e1067ac42e01?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -29,7 +29,7 @@ const reviews: Review[] = [
     header: "Great Service",
     author: "Benjamin Martinez",
     content:
-      "Nulla facilisi. Sed auctor eleifend orci, et dictum libero accumsan vel. Suspendisse potenti.",
+      "\"As a tech enthusiast, I've tried numerous smartwatches, but Galaxy Watches truly stands out. The intuitive interface and smooth performance make it a joy to use. The battery life exceeds my expectations, lasting through even my busiest days. If you're looking for a reliable and stylish smartwatch, look no further!\"",
     rating: 4,
     imageUrl:
       "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -39,7 +39,7 @@ const reviews: Review[] = [
     header: "Highly Recommended",
     author: "Will Davis",
     content:
-      "Praesent auctor nisi nec lacus iaculis, nec fringilla odio pharetra. Donec vitae arcu eget odio tempus tristique.",
+      '"I was hesitant to switch to a smartwatch, but Galaxy Watches has completely changed my mind. Not only does it keep me organized with its calendar and reminder features, but the health tracking capabilities have motivated me to stay active throughout the day. Plus, the customizable watch faces allow me to express my style effortlessly. 5/5 would recommend!"',
     rating: 5,
     imageUrl:
       "https://images.unsplash.com/photo-1620000617482-821324eb9a14?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -62,29 +62,36 @@ const ReviewSlider: React.FC = () => {
   };
 
   return (
-    <div className="w-9/12 max-w-screen-lg mx-auto ">
-      <div className="relative w-full">
-        <button
-          onClick={handlePrev}
-          className="absolute top-1/2 -left-20 transform -translate-y-1/2 focus:outline-none z-10"
-        >
-          <FaArrowCircleLeft className="text-[#cf0cbc]" size={50} />
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute top-1/2 -right-20 transform -translate-y-1/2 focus:outline-none z-10"
-        >
-          <FaArrowCircleRight className="text-[#cf0cbc]" size={50} />
-        </button>
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-300 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
-            {reviews.map((review) => (
-              <div key={review.id} className="w-full flex-shrink-0">
-                <div className="relative rounded-lg shadow-lg overflow-hidden  w-full h-96">
-                  {/* Adjusted height to be twice as tall */}
+    <>
+      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96">
+        <div className="relative">
+          <div className="flex transition-transform duration-300 ease-in-out overflow-x-hidden rounded-xl">
+            <div className="ml-3.5 absolute transition-all duration-1000 opacity-100 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-xl  animate-tilt"></div>
+            <button
+              onClick={handlePrev}
+              className="absolute top-1/2 -left-14 transform -translate-y-1/2 focus:outline-none z-10"
+            >
+              <FaArrowCircleLeft
+                className="text-[#cf0cbc] hover:-translate-x-5 hover:transition-transform duration-300 "
+                size={50}
+              />
+            </button>
+            <button
+              onClick={handleNext}
+              className="absolute top-1/2 -right-14 transform -translate-y-1/2 focus:outline-none z-10"
+            >
+              <FaArrowCircleRight
+                className="text-[#cf0cbc]  hover:translate-x-5 hover:transition-transform duration-300 "
+                size={50}
+              />
+            </button>
+            {reviews.map((review, index) => (
+              <div
+                key={review.id}
+                className="w-full"
+                style={{ display: index === currentIndex ? "block" : "none" }}
+              >
+                <div className="relative rounded-xl shadow-lg overflow-hidden w-full h-96">
                   <div className="p-4 bg-white h-full">
                     <h3 className="text-lg font-semibold text-center mb-2">
                       {review.header}
@@ -103,9 +110,9 @@ const ReviewSlider: React.FC = () => {
                     <img
                       src={review.imageUrl}
                       alt={review.header}
-                      className="  w-48 h-auto mt-5 rounded-xl"
+                      className="w-48 h-auto mt-5 rounded-xl"
                     />
-                    <p className="text-gray-700 mt-10">{review.content}</p>
+                    <p className="text-gray-700 mt-5">{review.content}</p>
                   </div>
                 </div>
               </div>
@@ -113,7 +120,7 @@ const ReviewSlider: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
