@@ -66,32 +66,32 @@ const ReviewSlider: React.FC = () => {
       <div className="w-9/12 max-w-screen-lg ml-64 -mr-96">
         <div className="relative">
           <div className="flex transition-transform duration-300 ease-in-out overflow-x-hidden rounded-xl">
-            <div className="ml-3.5 absolute transition-all duration-1000 opacity-100 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-xl  animate-tilt"></div>
+            <div className="ml-3.5 absolute transition-all opacity-100 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-xl  animate-tilt"></div>
             <button
               onClick={handlePrev}
-              className="absolute top-1/2 -left-14 transform -translate-y-1/2 focus:outline-none z-10"
+              className="absolute top-1/2 -left-20 transform -translate-y-1/2 focus:outline-none z-10"
             >
               <FaArrowCircleLeft
-                className="text-[#cf0cbc] hover:-translate-x-5 hover:transition-transform duration-300 "
+                className="text-[#cf0cbc] hover:scale-150 duration-200 "
                 size={50}
               />
             </button>
             <button
               onClick={handleNext}
-              className="absolute top-1/2 -right-14 transform -translate-y-1/2 focus:outline-none z-10"
+              className="absolute top-1/2 -right-20 transform -translate-y-1/2 focus:outline-none z-10"
             >
               <FaArrowCircleRight
-                className="text-[#cf0cbc]  hover:translate-x-5 hover:transition-transform duration-300 "
+                className="text-[#cf0cbc]  hover:scale-150 duration-200 "
                 size={50}
               />
             </button>
             {reviews.map((review, index) => (
               <div
                 key={review.id}
-                className="w-full"
+                className="w-full "
                 style={{ display: index === currentIndex ? "block" : "none" }}
               >
-                <div className="relative rounded-xl shadow-lg overflow-hidden w-full h-96">
+                <div className="relative rounded-xl shadow-lg overflow-hidden w-full h-[26rem]">
                   <div className="p-4 bg-white h-full">
                     <h3 className="text-lg font-semibold text-center mb-2">
                       {review.header}
@@ -106,11 +106,11 @@ const ReviewSlider: React.FC = () => {
                         ))}
                       </div>
                     </div>
-                    <p className="text-black text-sm">{review.author}</p>
+                    <p className="text-black text-md ml-5">{review.author}</p>
                     <img
                       src={review.imageUrl}
                       alt={review.header}
-                      className="w-48 h-auto mt-5 rounded-xl"
+                      className="w-52 h-auto mt-5 rounded-xl"
                     />
                     <p className="text-gray-700 mt-5">{review.content}</p>
                   </div>
