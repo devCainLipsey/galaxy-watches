@@ -106,6 +106,7 @@ const ReviewSlider: React.FC = () => {
                         ))}
                       </div>
                     </div>
+
                     <p className="text-black text-md ml-5">{review.author}</p>
                     <img
                       src={review.imageUrl}

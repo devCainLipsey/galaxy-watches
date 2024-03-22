@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
 import AboutUsCard from "@/components/AboutUsCard";
 import ReviewSlider from "@/components/ReviewSlider";
+import Footer from "@/components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const Home: React.FC = () => {
               </p>
 
               <div className="w-64 relative inline-flex group mt-12">
-                <div className="absolute transition-all duration-1000 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                   Shop Now
                 </button>
@@ -66,7 +67,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="w-64 relative inline-flex group mt-12">
-            <div className="absolute transition-all duration-1000 opacity-60 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+            <div className="absolute transition-all duration-100 opacity-60 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
             <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
               View Shop
             </button>
@@ -76,44 +77,6 @@ const Home: React.FC = () => {
             <AboutUsCard
               imageSrc="https://images.unsplash.com/photo-1550935268-e9e4bdc7c972?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               heading="About Us"
-              paragraph={
-                <>
-                  <p>
-                    At Galaxy Watches, we transcend the conventional boundaries
-                    of timekeeping, blending cutting-edge technology with
-                    timeless craftsmanship. Our journey began with a vision to
-                    redefine elegance and functionality in the world of
-                    wristwear. Each timepiece we craft is a testament to our
-                    unwavering commitment to excellence, meticulously engineered
-                    to accompany you through every moment of your life's
-                    journey.
-                  </p>
-                  <br />
-                  <p>
-                    Driven by innovation and inspired by the wonders of the
-                    cosmos, our watches seamlessly integrate advanced features
-                    with classic design elements. From sleek and sophisticated
-                    designs to rugged sporty models, our diverse collection
-                    caters to every individual's style and needs. With precision
-                    engineering and attention to detail, Galaxy Watches stand as
-                    a symbol of sophistication and reliability, empowering you
-                    to navigate through the modern world with confidence and
-                    style.
-                  </p>
-                  <br />
-                  <p>
-                    Embrace the fusion of style and technology with Galaxy
-                    Watches, where each timepiece tells a story of innovation
-                    and craftsmanship. Whether you seek a statement accessory
-                    for a formal occasion or a reliable companion for your
-                    active lifestyle, our watches are designed to elevate your
-                    experience and redefine the way you perceive time. Join us
-                    on a journey through the cosmos of horology, where
-                    imagination knows no bounds, and every tick of the clock is
-                    a testament to our commitment to excellence.
-                  </p>
-                </>
-              }
             />
           </div>
           <p className="mt-12 text-md text-white">What our customers</p>
@@ -138,48 +101,11 @@ const Home: React.FC = () => {
             <AboutUsCard
               imageSrc="https://images.unsplash.com/photo-1550935268-e9e4bdc7c972?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               heading="About Us"
-              paragraph={
-                <>
-                  <p>
-                    At Galaxy Watches, we transcend the conventional boundaries
-                    of timekeeping, blending cutting-edge technology with
-                    timeless craftsmanship. Our journey began with a vision to
-                    redefine elegance and functionality in the world of
-                    wristwear. Each timepiece we craft is a testament to our
-                    unwavering commitment to excellence, meticulously engineered
-                    to accompany you through every moment of your life's
-                    journey.
-                  </p>
-                  <br />
-                  <p>
-                    Driven by innovation and inspired by the wonders of the
-                    cosmos, our watches seamlessly integrate advanced features
-                    with classic design elements. From sleek and sophisticated
-                    designs to rugged sporty models, our diverse collection
-                    caters to every individual's style and needs. With precision
-                    engineering and attention to detail, Galaxy Watches stand as
-                    a symbol of sophistication and reliability, empowering you
-                    to navigate through the modern world with confidence and
-                    style.
-                  </p>
-                  <br />
-                  <p>
-                    Embrace the fusion of style and technology with Galaxy
-                    Watches, where each timepiece tells a story of innovation
-                    and craftsmanship. Whether you seek a statement accessory
-                    for a formal occasion or a reliable companion for your
-                    active lifestyle, our watches are designed to elevate your
-                    experience and redefine the way you perceive time. Join us
-                    on a journey through the cosmos of horology, where
-                    imagination knows no bounds, and every tick of the clock is
-                    a testament to our commitment to excellence.
-                  </p>
-                </>
-              }
             />
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
