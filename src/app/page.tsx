@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import CounterCard from "@/components/CounterCard";
 import AboutUsCard from "@/components/AboutUsCard";
 import ReviewSlider from "@/components/ReviewSlider";
 import Footer from "@/components/Footer";
@@ -9,7 +11,10 @@ const Home: React.FC = () => {
   return (
     <>
       <NavBar />
-      <div className="min-h-screen bg-slate-950 relative">
+      <div
+        className="min-h-screen bg-gradient-to-r from-slate-950 via-purple-600 to-slate-950
+ relative"
+      >
         {/* Hero Section */}
         <div className="flex flex-col justify-center items-center">
           <div className="w-full h-96 rounded-lg overflow-hidden relative">
@@ -30,8 +35,8 @@ const Home: React.FC = () => {
               </p>
 
               <div className="w-64 relative inline-flex group mt-12">
-                <div className="absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-                <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                <div className="absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                   Shop Now
                 </button>
               </div>
@@ -67,39 +72,40 @@ const Home: React.FC = () => {
           </div>
 
           <div className="w-64 relative inline-flex group mt-12">
-            <div className="absolute transition-all duration-100 opacity-60 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-            <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-              View Shop
+            <div className="absolute transition-all duration-100 opacity-50 -inset-px bg-gradient-to-r from-[#cf0cbc] via-[#8554c7] to-[#cf0cbc] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+            <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 group-hover:pl-6">
+              <span className="ml-5 group-hover:translate-x-[-1rem] transition-all duration-200 text-center">
+                View Shop
+              </span>
+              <FaLongArrowAltRight
+                className="-ml-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                size={20}
+              />
             </button>
           </div>
-          {/* About Us Section */}
-          <div className="mt-16 flex justify-center">
-            <AboutUsCard
-              imageSrc="https://images.unsplash.com/photo-1550935268-e9e4bdc7c972?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              heading="About Us"
-            />
-          </div>
-          <p className="mt-12 text-md text-white">What our customers</p>
+          <CounterCard />
+
+          <p className="mt-20  text-md text-white">What our customers</p>
           <h2 className="text-4xl text-white text-center mb-4">
             Say About Our Watches
           </h2>
-          <span className="h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
+          <span className="mb-15 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
 
           {/* Review Slider Section */}
-          <div className=" mt-40 relative ml-96">
-            <div className="absolute inset-0 ml-20">
+          <div className=" mt-40 relative ml-[33rem]">
+            <div className="absolute inset-0 ">
               <img
                 src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Background"
-                className="w-full h-full object-cover rounded-md scale-150 -translate-x-1/2"
+                className="w-full h-full object-cover rounded-2xl scale-150  -translate-x-[21rem]"
               />
             </div>
             <ReviewSlider />
           </div>
           {/* About Us Section */}
-          <div className="mt-40 flex justify-center">
+          <div className="mt-60 flex justify-center">
             <AboutUsCard
-              imageSrc="https://images.unsplash.com/photo-1550935268-e9e4bdc7c972?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imageSrc="https://images.unsplash.com/photo-1680113727062-8a118574b782?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               heading="About Us"
             />
           </div>

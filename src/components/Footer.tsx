@@ -4,7 +4,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 text-white py-8">
+    <footer
+      className="bg-gradient-to-r from-slate-950 via-purple-600 to-slate-950
+    text-white py-8"
+    >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
@@ -31,12 +34,7 @@ const Footer: React.FC = () => {
                   <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
                 </a>
               </li>
-              <li className="mb-2 group">
-                <a href="#" className="relative inline-block">
-                  About Us
-                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                </a>
-              </li>
+
               <li className="mb-2 group w-5">
                 <a href="#" className="relative  inline-block">
                   Contact

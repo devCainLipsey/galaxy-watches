@@ -5,7 +5,10 @@ import { PiWatchThin } from "react-icons/pi";
 const NavBar: React.FC = () => {
   return (
     <>
-      <nav className="bg-slate-950 py-2 px-20 flex items-center justify-between">
+      <nav
+        className="bg-gradient-to-r from-slate-950 via-purple-600 to-slate-950
+ py-2 px-20 flex items-center justify-between"
+      >
         {/* Logo */}
         <div className="flex items-center">
           <PiWatchThin className="text-white ml-2" size={24} />
