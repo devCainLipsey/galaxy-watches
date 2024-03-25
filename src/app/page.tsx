@@ -3,8 +3,9 @@ import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import CounterCard from "@/components/CounterCard";
-import AboutUsCard from "@/components/AboutUsCard";
 import ReviewSlider from "@/components/ReviewSlider";
+import AboutUsCard from "@/components/AboutUsCard";
+import ContactUsForm from "@/components/ContactUsForm";
 import Footer from "@/components/Footer";
 
 const Home: React.FC = () => {
@@ -103,14 +104,16 @@ const Home: React.FC = () => {
             <ReviewSlider />
           </div>
           {/* About Us Section */}
-          <div className="mt-60 flex justify-center">
+          <div className="mt-60 mb-20 flex justify-center">
             <AboutUsCard
               imageSrc="https://images.unsplash.com/photo-1680113727062-8a118574b782?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               heading="About Us"
             />
           </div>
+          <ContactUsForm />
         </div>
       </div>
+
       <Footer />
     </>
   );
