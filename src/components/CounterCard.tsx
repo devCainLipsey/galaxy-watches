@@ -46,7 +46,7 @@ const CounterCard: React.FC = () => {
   return (
     <div className=" mt-20 flex justify-center items-center">
       <div className="w-full bg-black shadow-xl overflow-hidden rounded-3xl">
-        <div className="md:flex">
+        <div className="flex">
           <div className="p-16 flex flex-col">
             <div className="uppercase tracking-wide text-3xl text-center text-indigo-300 font-semibold mb-8">
               Coming soon

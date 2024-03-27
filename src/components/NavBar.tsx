@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/shop"
+              href="/Shop"
               className="text-white relative group inline-block"
             >
               <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>

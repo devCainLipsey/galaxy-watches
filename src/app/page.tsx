@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -34,15 +35,17 @@ const Home: React.FC = () => {
               <p className="mt-4 text-3xl text-white">
                 Where modern technology meets timeless style
               </p>
-
-              <div className="w-64 relative inline-flex group mt-12">
-                <div className="absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-                <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                  Shop Now
-                </button>
-              </div>
+              <Link href="/Shop">
+                <div className="w-64 relative inline-flex group mt-12">
+                  <div className="absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                  <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#cf0cbc]">
+                    Shop Now
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
+
           {/* Best Sellers Section */}
           <div className="mt-16">
             <h2 className="text-4xl text-white text-center mb-4">
@@ -74,7 +77,7 @@ const Home: React.FC = () => {
 
           <div className="w-64 relative inline-flex group mt-12">
             <div className="absolute transition-all duration-100 opacity-50 -inset-px bg-gradient-to-r from-[#cf0cbc] via-[#8554c7] to-[#cf0cbc] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-            <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 group-hover:pl-6">
+            <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#cf0cbc] group-hover:pl-6">
               <span className="ml-5 group-hover:translate-x-[-1rem] transition-all duration-200 text-center">
                 View Shop
               </span>
