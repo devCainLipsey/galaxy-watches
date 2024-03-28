@@ -17,7 +17,7 @@ const WatchCard: React.FC<{
           className="w-full h-64 object-cover rounded-3xl mb-4"
         />
         <h3 className="text-white text-xl font-semibold mb-2">{name}</h3>
-        <p className="text-gray-400 text-lg font-bold mb-2">${price}</p>
+        <p className="text-green-500 text-lg font-bold mb-2">${price}</p>
         <div className="flex items-center">
           {Array.from({ length: 5 }).map((_, index) => (
             <AiFillStar

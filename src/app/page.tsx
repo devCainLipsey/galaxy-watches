@@ -74,19 +74,20 @@ const Home: React.FC = () => {
               />
             </div>
           </div>
-
-          <div className="w-64 relative inline-flex group mt-12">
-            <div className="absolute transition-all duration-100 opacity-50 -inset-px bg-gradient-to-r from-[#cf0cbc] via-[#8554c7] to-[#cf0cbc] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-            <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#cf0cbc] group-hover:pl-6">
-              <span className="ml-5 group-hover:translate-x-[-1rem] transition-all duration-200 text-center">
-                View Shop
-              </span>
-              <FaLongArrowAltRight
-                className="-ml-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                size={20}
-              />
-            </button>
-          </div>
+          <Link href="/Shop">
+            <div className="w-64 relative inline-flex group mt-12">
+              <div className="absolute transition-all duration-100 opacity-50 -inset-px bg-gradient-to-r from-[#cf0cbc] via-[#8554c7] to-[#cf0cbc] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <button className="w-64 relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-100 bg-black font-pj rounded-3xl focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#cf0cbc] group-hover:pl-6">
+                <span className="ml-5 group-hover:translate-x-[-1rem] transition-all duration-200 text-center">
+                  View Shop
+                </span>
+                <FaLongArrowAltRight
+                  className="-ml-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  size={20}
+                />
+              </button>
+            </div>
+          </Link>
           <CounterCard />
 
           <p className="mt-20  text-md text-white">What our customers</p>

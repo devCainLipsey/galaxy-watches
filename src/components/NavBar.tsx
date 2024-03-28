@@ -1,6 +1,8 @@
 import React from "react";
+
 import Link from "next/link";
 import { PiWatchThin } from "react-icons/pi";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const NavBar: React.FC = () => {
   return (
@@ -36,7 +38,7 @@ const NavBar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/about-us"
               className="text-white relative group inline-block"
             >
               <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
@@ -45,13 +47,14 @@ const NavBar: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="text-white relative group inline-block"
             >
               <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
               <span className="group-hover:mb-1">Contact Us</span>
             </Link>
           </li>
+          <MdOutlineShoppingCart size={30} />
         </ul>
       </nav>
     </>
