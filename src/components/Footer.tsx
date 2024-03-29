@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                 placeholder="Your Email"
                 className="flex-1 mr-2 py-2 px-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
               />
-              <button className="bg-[#8554c7] text-white py-2 px-4 rounded-r-lg hover:bg-[#cf0cbc] focus:outline-none focus:ring-2 focus:ring-purple-600">
+              <button className="bg-[#8554c7] text-white py-2 px-4 rounded-r-3xl hover:bg-[#cf0cbc] focus:outline-none focus:ring-2 focus:ring-purple-600">
                 Subscribe
               </button>
             </form>
