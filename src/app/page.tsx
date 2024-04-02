@@ -61,22 +61,25 @@ const Home: React.FC = () => {
 
             <div className="mt-10 flex flex-wrap justify-center gap-20">
               <WatchCard
+                id={1}
                 imageSrc="https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 name="TechNova Pro Series"
                 price={100}
-                rating={4}
+                starRating={4}
               />
               <WatchCard
+                id={2}
                 imageSrc="https://images.unsplash.com/photo-1698729617018-7475086abd54?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 name="Infinity Pulse Tracker"
                 price={150}
-                rating={5}
+                starRating={5}
               />
               <WatchCard
+                id={3}
                 imageSrc="https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 name="Heritage Navigator"
                 price={120}
-                rating={3}
+                starRating={3}
               />
             </div>
           </div>

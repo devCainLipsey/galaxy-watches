@@ -1,15 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiFillStar } from "react-icons/ai";
 
 const DetailsDescription: React.FC<{
-  heading: string;
+  name: string;
   price: number;
   starRating: number;
   description: string;
-}> = ({ heading, price, starRating, description }) => {
+}> = ({ name, price, starRating, description }) => {
   const [quantity, setQuantity] = useState(1);
+
+  useEffect(() => {
+    console.log("Star Rating:", starRating);
+  }, [starRating]);
 
   const incrementQuantity = () => {
     setQuantity(quantity + 1);
@@ -22,8 +26,8 @@ const DetailsDescription: React.FC<{
   };
 
   return (
-    <div className="w-full bg-black p-5 shadow-md mb-10 rounded-b-3xl">
-      <h2 className="text-xl text-white font-semibold mb-2">{heading}</h2>
+    <div className="w-full bg-black p-5 shadow-md mb-20 rounded-b-3xl">
+      <h2 className="text-xl text-white font-semibold mb-2">{name}</h2>
       <div className="flex items-center mb-2">
         <span className="text-lg text-green-500 font-bold">
           ${price.toFixed(2)}
@@ -32,8 +36,8 @@ const DetailsDescription: React.FC<{
           {[...Array(5)].map((_, index) => (
             <AiFillStar
               key={index}
-              className={`text-yellow-500 ${
-                index < Math.round(starRating) ? "fill-current" : ""
+              className={`${
+                index < starRating ? "text-yellow-500" : "text-gray-300"
               }`}
             />
           ))}
