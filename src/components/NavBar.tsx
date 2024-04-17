@@ -54,7 +54,9 @@ const NavBar: React.FC = () => {
               <span className="group-hover:mb-1">Contact Us</span>
             </Link>
           </li>
-          <MdOutlineShoppingCart size={30} />
+          <Link href="/Cart">
+            <MdOutlineShoppingCart size={30} />
+          </Link>
         </ul>
       </nav>
     </>
