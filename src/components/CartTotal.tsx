@@ -9,26 +9,28 @@ const CartTotal: React.FC<CartTotalProps> = ({ subtotal }) => {
   const orderTotal = subtotal + shippingCost;
 
   return (
-    <div className="bg-black p-4 rounded-lg shadow-md mb-4">
-      <h2 className="text-lg text-white text-center font-semibold mb-2">
+    <div className="bg-black p-6 rounded-lg shadow-md mb-4 mt-20">
+      <h2 className="text-2xl text-white text-center font-semibold mb-2">
         Cart Total
       </h2>
-      <span className="h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
-      <p className="text-sm text-white mb-2">
+      <span className="h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto mb-5"></span>
+      <p className="text-lg text-white mb-2">
         Items Subtotal:
-        <span className="text-green-500"> ${subtotal.toFixed(2)}</span>
+        <span className="text-green-500 ml-2"> ${subtotal.toFixed(2)}</span>
       </p>
-      <p className="text-sm text-white mb-2">
-        Shipping Cost:{" "}
-        <span className="text-green-500">${shippingCost.toFixed(2)}</span>
+      <p className="text-lg text-white mb-2">
+        Shipping Cost:
+        <span className="text-green-500 ml-2">${shippingCost.toFixed(2)}</span>
       </p>
       <p className="text-lg text-white font-semibold mb-2">
-        Order Total:{" "}
-        <span className="text-green-500">${orderTotal.toFixed(2)}</span>
+        Order Total:
+        <span className="text-green-500 ml-2">${orderTotal.toFixed(2)}</span>
       </p>
-      <button className="px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc]">
-        Order Now
-      </button>
+      <div className="text-center">
+        <button className="mt-5 px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc]">
+          Order Now
+        </button>
+      </div>
     </div>
   );
 };
