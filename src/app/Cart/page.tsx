@@ -1,12 +1,19 @@
-// Cart.tsx
+"use client";
+
 import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/features/store";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import CartItem from "@/components/CartItem";
 import CartTotal from "@/components/CartTotal";
 
 const Cart: React.FC = () => {
-  // Dummy data for cart items
+  // Fetching cart items from Redux store
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+
+  {
+    /* // Dummy data for cart items
   const cartItems = [
     {
       id: 1,
@@ -26,6 +33,9 @@ const Cart: React.FC = () => {
     },
     // Add more items as needed
   ];
+
+*/
+  }
 
   // Calculate subtotal
   const subtotal = cartItems.reduce(

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
+import ReduxProvider from "@/redux/features/provider";
 
 const roboto_serif = Roboto_Serif({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto_serif.className}>{children}</body>
+      <body className={roboto_serif.className}>
+        <ReduxProvider>{children}</ReduxProvider>
+      </body>
     </html>
   );
 }
