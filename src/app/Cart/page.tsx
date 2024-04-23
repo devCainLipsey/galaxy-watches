@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/features/store";
 import NavBar from "@/components/NavBar";
@@ -9,39 +9,20 @@ import CartItem from "@/components/CartItem";
 import CartTotal from "@/components/CartTotal";
 
 const Cart: React.FC = () => {
-  // Fetching cart items from Redux store
   const cartItems = useSelector((state: RootState) => state.cart.items);
+  const [subtotal, setSubtotal] = useState(0);
 
-  {
-    /* // Dummy data for cart items
-  const cartItems = [
-    {
-      id: 1,
-      name: "Galaxy Watch 1",
-      price: 199,
-      imageUrl:
-        "https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Galaxy Watch 2",
-      price: 249,
-      imageUrl:
-        "https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      quantity: 1,
-    },
-    // Add more items as needed
-  ];
+  useEffect(() => {
+    const newSubtotal = cartItems.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    );
+    setSubtotal(newSubtotal);
+  }, [cartItems]);
 
-*/
-  }
-
-  // Calculate subtotal
-  const subtotal = cartItems.reduce(
-    (total, item) => total + item.price * item.quantity,
-    0
-  );
+  const updateSubtotal = (newSubtotal: number) => {
+    setSubtotal(newSubtotal);
+  };
 
   return (
     <>
@@ -60,6 +41,8 @@ const Cart: React.FC = () => {
               price={item.price}
               imageUrl={item.imageUrl}
               quantity={item.quantity}
+              subtotal={subtotal}
+              updateSubtotal={updateSubtotal} // Pass updateSubtotal function to CartItem
             />
           ))}
         </div>

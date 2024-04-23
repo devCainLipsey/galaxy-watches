@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface CartTotalProps {
   subtotal: number;
@@ -9,7 +10,7 @@ const CartTotal: React.FC<CartTotalProps> = ({ subtotal }) => {
   const orderTotal = subtotal + shippingCost;
 
   return (
-    <div className="bg-black p-6 rounded-lg shadow-md mb-4 mt-20">
+    <div className="bg-black p-6 rounded-lg shadow-md mb-4 mt-10">
       <h2 className="text-2xl text-white text-center font-semibold mb-2">
         Cart Total
       </h2>
@@ -26,11 +27,13 @@ const CartTotal: React.FC<CartTotalProps> = ({ subtotal }) => {
         Order Total:
         <span className="text-green-500 ml-2">${orderTotal.toFixed(2)}</span>
       </p>
-      <div className="text-center">
-        <button className="mt-5 px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc]">
-          Order Now
-        </button>
-      </div>
+      <Link href="/Checkout">
+        <div className="text-center">
+          <button className="mt-5 px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc]">
+            Checkout
+          </button>
+        </div>
+      </Link>
     </div>
   );
 };

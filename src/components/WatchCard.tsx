@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "@/redux/features/cartSlice";
 import { AiFillStar } from "react-icons/ai"; // Import star icon from React Icons
 import { FaLongArrowAltRight } from "react-icons/fa";
+import ItemAddedOverlay from "./ItemAddedOverlay";
 
 const WatchCard: React.FC<{
   id: number;
@@ -15,6 +16,7 @@ const WatchCard: React.FC<{
   starRating: number;
 }> = ({ id, imageSrc, name, price, starRating }) => {
   const dispatch = useDispatch();
+  const [showOverlay, setShowOverlay] = useState(false);
 
   const handleAddToCart = () => {
     dispatch(
@@ -26,18 +28,32 @@ const WatchCard: React.FC<{
         quantity: 1,
       })
     );
+    setShowOverlay(true);
+  };
+
+  const handleCloseOverlay = () => {
+    setShowOverlay(false); // Function to close the overlay
   };
 
   return (
     <>
-      {/*<Link href={`/Details?id=${id}`} className="hover:scale-110 duration-300"> */}
       <div className="bg-black shadow-md rounded-3xl p-6 w-96">
-        <img
-          src={imageSrc}
-          alt="Product"
-          className="w-full h-64 object-cover rounded-3xl mb-4"
-        />
-        <h3 className="text-white text-xl font-semibold mb-2">{name}</h3>
+        <Link href={`/Details?id=${id}`}>
+          <img
+            src={imageSrc}
+            alt="Product"
+            className="w-full h-64 object-cover rounded-3xl mb-4 hover:scale-105 duration-300"
+          />
+        </Link>
+        <Link href={`/Details?id=${id}`}>
+          <h3 className="text-white text-xl font-semibold mb-2 relative group inline-block">
+            {name}
+            <span
+              className="absolute left-0 bottom-0 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"
+              style={{ width: "100%" }}
+            ></span>
+          </h3>
+        </Link>
         <p className="text-green-500 text-lg font-bold mb-2">${price}</p>
         <div className="flex items-center">
           {Array.from({ length: 5 }).map((_, index) => (
@@ -65,7 +81,7 @@ const WatchCard: React.FC<{
           </button>
         </div>
       </div>
-      {/*</Link> */}
+      {showOverlay && <ItemAddedOverlay onClose={handleCloseOverlay} />}
     </>
   );
 };

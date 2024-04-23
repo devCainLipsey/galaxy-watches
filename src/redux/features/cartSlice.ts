@@ -10,10 +10,12 @@ interface CartItem {
 
 interface CartState {
   items: CartItem[];
+  totalCount: number;
 }
 
 const initialState: CartState = {
   items: [],
+  totalCount: 0,
 };
 
 const cartSlice = createSlice({
@@ -28,10 +30,16 @@ const cartSlice = createSlice({
       } else {
         state.items.push(item);
       }
+      state.totalCount++; // Increment totalCount when an item is added
+    },
+    removeItemFromCart(state, action: PayloadAction<number>) {
+      const itemIdToRemove = action.payload;
+      state.items = state.items.filter((item) => item.id !== itemIdToRemove);
+      state.totalCount--; // Decrement totalCount when an item is removed
     },
   },
 });
 
-export const { addItemToCart } = cartSlice.actions;
+export const { addItemToCart, removeItemFromCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
