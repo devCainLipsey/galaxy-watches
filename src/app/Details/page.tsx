@@ -135,6 +135,7 @@ const DetailsPage: React.FC = () => {
               price={price}
               starRating={starRating}
               description={description}
+              mainImage={Array.isArray(imageSrc) ? imageSrc[0] : imageSrc}
             />
           </div>
         </div>

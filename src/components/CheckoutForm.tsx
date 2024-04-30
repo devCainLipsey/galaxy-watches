@@ -13,7 +13,10 @@ const CheckoutForm: React.FC = () => {
 
   return (
     <div className="max-w-md mx-auto">
-      <h2 className="block text-lg font-medium text-white mb-3">Details</h2>
+      <h2 className="block text-xl  font-medium text-white mb-3">
+        <span className="text-2xl text-white mr-5">1</span>Details
+      </h2>
+
       <form className="space-y-6">
         <div className="grid grid-cols-2 gap-4">
           <div>
@@ -487,7 +490,7 @@ const CheckoutForm: React.FC = () => {
 
         <div>
           <h2 className="block text-lg font-medium text-white">
-            Payment Method
+            <span className="text-2xl mr-5">2</span>Payment Method
           </h2>
           <div className="flex items-center mt-2">
             <input
@@ -598,11 +601,17 @@ const CheckoutForm: React.FC = () => {
         )}
 
         <div>
+          <h2 className="block text-lg font-medium text-white">
+            <span className="text-2xl mr-5">3</span>Review items
+          </h2>
+        </div>
+
+        <div>
           <button
             type="submit"
             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#8554c7] hover:bg-[#cf0cbc]  focus:outline-none focus:ring focus:border-[#cf0cbc]"
           >
-            Checkout
+            Place Order
           </button>
         </div>
       </form>

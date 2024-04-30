@@ -30,7 +30,7 @@ const CartTotal: React.FC<CartTotalProps> = ({ subtotal }) => {
       <Link href="/Checkout">
         <div className="text-center">
           <button className="mt-5 px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc]">
-            Checkout
+            Proceed to Checkout
           </button>
         </div>
       </Link>
