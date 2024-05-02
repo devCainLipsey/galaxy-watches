@@ -95,6 +95,8 @@ const CheckoutForm: React.FC = () => {
             className="mt-1 p-2 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
             required
           >
+            {" "}
+            {/* OPTIOINS FOR COUNTRIES GO HERE */}
             <option value="United States">United States</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Albania">Albania</option>
@@ -397,6 +399,8 @@ const CheckoutForm: React.FC = () => {
               className="mt-1 p-2 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
               required
             >
+              {" "}
+              {/* OPTIONS FOR STATES GO HERE */}
               <option value="---">---</option>
               <option value="Alabama">Alabama</option>
               <option value="Alaska">Alaska</option>
