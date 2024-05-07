@@ -44,24 +44,7 @@ const NavBar: React.FC = () => {
               <span className="group-hover:mb-1">Shop</span>
             </Link>
           </li>
-          <li>
-            <Link
-              href="/about-us"
-              className="text-white relative group inline-block"
-            >
-              <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              <span className="group-hover:mb-1">About Us</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact-us"
-              className="text-white relative group inline-block"
-            >
-              <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
-              <span className="group-hover:mb-1">Contact Us</span>
-            </Link>
-          </li>
+
           <Link href="/Cart" className="relative group inline-block">
             <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-0 group-hover:opacity-100 transition-opacity"></span>
             <span className="group-hover:mb-1 relative">
