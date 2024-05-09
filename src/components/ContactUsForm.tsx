@@ -107,7 +107,7 @@ const ContactUsForm: React.FC = () => {
         <img
           src="https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Contact Us"
-          className="w-1/3 h-auto object-cover rounded-r-3xl ml-4"
+          className="w-1/3 h-auto object-cover rounded-r-3xl ml-4 max-[1700px]:hidden"
         />
       </div>
       {showOverlay && <ContactSuccessOverlay onClose={handleCloseOverlay} />}

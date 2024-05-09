@@ -19,7 +19,7 @@ const reviews: Review[] = [
     header: "Amazing Product!",
     author: "Emily Johnson",
     content:
-      "\"I've been using my Galaxy Watch for a week now, and I'm blown away by its features! From tracking my workouts to receiving notifications seamlessly, this watch has become an essential part of my daily routine. Plus, the sleek design earns me compliments everywhere I go. Amazing Product!\"",
+      "\"I've been using my Galaxy Watch for a week now, and I'm blown away by its features! From tracking my workouts to receiving notifications seamlessly, this watch has become an essential part of my daily routine.\"",
     rating: 5,
     imageUrl:
       "https://images.unsplash.com/photo-1522307837370-cc113a36b784?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -29,7 +29,7 @@ const reviews: Review[] = [
     header: "Great Service",
     author: "Benjamin Martinez",
     content:
-      "\"As a tech enthusiast, I've tried numerous smartwatches, but Galaxy Watches truly stands out. The intuitive interface and smooth performance make it a joy to use. The battery life exceeds my expectations, lasting through even my busiest days. If you're looking for a reliable and stylish smartwatch, look no further!\"",
+      '"As a tech enthusiast, I\'ve tried numerous smartwatches, but Galaxy Watches truly stands out. The intuitive interface and smooth performance make it a joy to use."',
     rating: 4,
     imageUrl:
       "https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -39,7 +39,7 @@ const reviews: Review[] = [
     header: "Highly Recommended",
     author: "Will Davis",
     content:
-      '"I was hesitant to switch to a smartwatch, but Galaxy Watches has completely changed my mind. Not only does it keep me organized with its calendar and reminder features, but the health tracking capabilities have motivated me to stay active throughout the day. Plus, the customizable watch faces allow me to express my style effortlessly. 5/5 would recommend!"',
+      '"I was hesitant to switch to a smartwatch, but Galaxy Watches has completely changed my mind. Plus, the customizable watch faces allow me to express my style effortlessly. 5/5 would recommend!"',
     rating: 5,
     imageUrl:
       "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -63,7 +63,7 @@ const ReviewSlider: React.FC = () => {
 
   return (
     <>
-      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96">
+      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96 max-[1750px]:ml-40  max-[1470px]:ml-10  ">
         <div className="relative">
           <div className="flex transition-transform duration-300 ease-in-out overflow-x-hidden rounded-3xl">
             <div className=" absolute transition-all opacity-100 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-xl  animate-tilt"></div>

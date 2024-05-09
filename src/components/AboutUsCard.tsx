@@ -10,7 +10,7 @@ const AboutUsCard: React.FC<{
         <img
           src={imageSrc}
           alt="About Us"
-          className="w-1/3 h-auto object-cover rounded-l-3xl mr-6"
+          className="w-1/3 h-auto object-cover rounded-l-3xl mr-6 max-[1700px]:hidden"
         />
         <div className="relative px-6">
           <div
