@@ -106,12 +106,12 @@ const Home: React.FC = () => {
           <span className="mb-15 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
 
           {/* Review Slider Section */}
-          <div className=" mt-40 relative ml-[33rem] ">
+          <div className=" mt-40 relative ml-[33rem] max-[1300px]:ml-[5rem] max-[790px]:ml-[4.5rem]  max-[790px]:w-[600px] ">
             <div className="absolute inset-0 ">
               <img
                 src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Background"
-                className="w-full h-full object-cover rounded-2xl scale-150  -translate-x-[21rem]"
+                className="w-full h-full object-cover rounded-2xl scale-150  -translate-x-[21rem] max-[1300px]:hidden"
               />
             </div>
             <ReviewSlider />

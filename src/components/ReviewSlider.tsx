@@ -63,13 +63,13 @@ const ReviewSlider: React.FC = () => {
 
   return (
     <>
-      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96 max-[1750px]:ml-40  max-[1470px]:ml-10  ">
+      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96 max-[1750px]:ml-40  max-[1470px]:ml-10   ">
         <div className="relative">
           <div className="flex transition-transform duration-300 ease-in-out overflow-x-hidden rounded-3xl">
             <div className=" absolute transition-all opacity-100 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-xl  animate-tilt"></div>
             <button
               onClick={handlePrev}
-              className="absolute top-1/2 -left-20 transform -translate-y-1/2 focus:outline-none z-10"
+              className="absolute top-1/2 -left-20 transform -translate-y-1/2 focus:outline-none z-10 max-[790px]:left-32 max-[790px]:translate-y-60  "
             >
               <FaArrowCircleLeft
                 className="text-[#cf0cbc] hover:scale-150 duration-200 "
@@ -78,7 +78,7 @@ const ReviewSlider: React.FC = () => {
             </button>
             <button
               onClick={handleNext}
-              className="absolute top-1/2 -right-20 transform -translate-y-1/2 focus:outline-none z-10"
+              className="absolute top-1/2 -right-20 transform -translate-y-1/2 focus:outline-none z-10 max-[790px]:right-32 max-[790px]:translate-y-60"
             >
               <FaArrowCircleRight
                 className="text-[#cf0cbc]  hover:scale-150 duration-200 "

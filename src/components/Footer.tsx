@@ -32,16 +32,7 @@ const Footer: React.FC = () => {
     text-white py-8"
       >
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2 lg:col-span-1">
-              <h2 className="text-xl font-bold mb-4">About Galaxy Watches</h2>
-              <p className="text-sm">
-                Galaxy Watches offers a wide range of high-quality smartwatches
-                blending cutting-edge technology with timeless craftsmanship.
-                Explore our collection and discover the perfect companion for
-                your lifestyle.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="col-span-1 lg:col-span-1">
               <h2 className="text-xl font-bold mb-4">Quick Links</h2>
               <ul className="text-sm inline-block">

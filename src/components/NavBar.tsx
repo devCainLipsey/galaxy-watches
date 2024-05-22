@@ -18,13 +18,17 @@ const NavBar: React.FC = () => {
     setShowMenu(!showMenu);
   };
 
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <>
-      <nav className="bg-gradient-to-r from-slate-950 via-purple-600 to-slate-950 py-2 px-4 sm:px-20 flex items-center justify-between">
+      <nav className="bg-gradient-to-r from-slate-950 via-purple-600 to-slate-950 py-2 px-4 sm:px-20 flex items-center justify-between relative z-50">
         {/* Logo */}
         <div className="flex items-center">
           <PiWatchThin className="text-white ml-2" size={24} />
-          <span className="text-white font-bold text-lg pl-2 ">
+          <span className="text-white font-bold text-lg pl-2">
             Galaxy Watches
           </span>
         </div>
@@ -42,26 +46,37 @@ const NavBar: React.FC = () => {
         <div
           className={`${
             showMenu
-              ? "fixed inset-0 flex items-center justify-center"
+              ? "fixed inset-0 flex items-center justify-center z-50"
               : "hidden"
           }`}
         >
-          <div className="bg-black bg-opacity-50 absolute inset-0"></div>
-          <div className="bg-white p-4 rounded-md">
+          <div
+            className="bg-black bg-opacity-50 absolute inset-0"
+            onClick={closeMenu}
+          ></div>
+          <div className="bg-black p-8 rounded-md relative z-50 w-80 h-auto border-l-4  border-[#cf0cbc]">
             <ul className="flex flex-col space-y-4">
               <li>
-                <Link href="/" className="text-black">
+                <Link
+                  href="/"
+                  className="text-white text-3xl"
+                  onClick={closeMenu}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/Shop" className="text-black">
+                <Link
+                  href="/Shop"
+                  className="text-white text-3xl"
+                  onClick={closeMenu}
+                >
                   Shop
                 </Link>
               </li>
               <li>
-                <Link href="/Cart" className="text-black">
-                  <MdOutlineShoppingCart size={24} />
+                <Link href="/Cart" className="text-white" onClick={closeMenu}>
+                  <MdOutlineShoppingCart size={40} />
                   {cartTotalCount > 0 && (
                     <span className="ml-1">{cartTotalCount}</span>
                   )}
