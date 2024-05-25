@@ -63,13 +63,13 @@ const ReviewSlider: React.FC = () => {
 
   return (
     <>
-      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96 max-[1750px]:ml-40  max-[1470px]:ml-10   ">
+      <div className="w-9/12 max-w-screen-lg ml-64 -mr-96 max-[1750px]:ml-40  max-[1470px]:ml-10 ">
         <div className="relative">
           <div className="flex transition-transform duration-300 ease-in-out overflow-x-hidden rounded-3xl">
             <div className=" absolute transition-all opacity-100 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-xl  animate-tilt"></div>
             <button
               onClick={handlePrev}
-              className="absolute top-1/2 -left-20 transform -translate-y-1/2 focus:outline-none z-10 max-[790px]:left-32 max-[790px]:translate-y-60  "
+              className="absolute top-1/2 -left-20 transform -translate-y-1/2 focus:outline-none z-10 max-[790px]:left-32 max-[790px]:translate-y-60 max-[670px]:left-10 "
             >
               <FaArrowCircleLeft
                 className="text-[#cf0cbc] hover:scale-150 duration-200 "
@@ -78,7 +78,7 @@ const ReviewSlider: React.FC = () => {
             </button>
             <button
               onClick={handleNext}
-              className="absolute top-1/2 -right-20 transform -translate-y-1/2 focus:outline-none z-10 max-[790px]:right-32 max-[790px]:translate-y-60"
+              className="absolute top-1/2 -right-20 transform -translate-y-1/2 focus:outline-none z-10 max-[790px]:right-32 max-[790px]:translate-y-60 max-[670px]:right-10"
             >
               <FaArrowCircleRight
                 className="text-[#cf0cbc]  hover:scale-150 duration-200 "
@@ -101,19 +101,23 @@ const ReviewSlider: React.FC = () => {
                         {[...Array(review.rating)].map((_, index) => (
                           <AiFillStar
                             key={index}
-                            className="h-6 w-6 text-yellow-500"
+                            className="h-6 w-6 text-yellow-500 max-[670px]:h-5 max-[670px]:w-5"
                           />
                         ))}
                       </div>
                     </div>
 
-                    <p className="text-black text-md ml-5">{review.author}</p>
+                    <p className="text-black text-md ml-5 max-[670px]:text-start">
+                      {review.author}
+                    </p>
                     <img
                       src={review.imageUrl}
                       alt={review.header}
-                      className="w-52 h-auto mt-5 rounded-3xl"
+                      className="w-52 h-auto mt-5 rounded-3xl max-[670px]:items-center"
                     />
-                    <p className="text-black mt-5">{review.content}</p>
+                    <p className="text-black mt-5 max-[670px]:text-sm">
+                      {review.content}
+                    </p>
                   </div>
                 </div>
               </div>

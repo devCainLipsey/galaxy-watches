@@ -32,7 +32,7 @@ const Home: React.FC = () => {
               <h1 className="text-6xl  font-galaxy text-center text-white">
                 Welcome to Galaxy Watches
               </h1>
-              <p className="mt-4 text-3xl text-white">
+              <p className="mt-4 text-3xl text-white  max-[730px]:text-balance max-[730px]:text-center  ">
                 Where modern technology meets timeless style
               </p>
               <Link href="/Shop">
@@ -106,8 +106,8 @@ const Home: React.FC = () => {
           <span className="mb-15 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
 
           {/* Review Slider Section */}
-          <div className=" mt-40 relative ml-[33rem] max-[1300px]:ml-[5rem] max-[790px]:ml-[4.5rem]  max-[790px]:w-[600px] ">
-            <div className="absolute inset-0 ">
+          <div className=" mt-40 relative ml-[33rem] max-[1300px]:ml-[5rem] max-[790px]:ml-[4.5rem]  max-[790px]:w-[600px]  max-[670px]:w-[450px] max-[670px]:ml-[2.5rem]">
+            <div className="absolute inset-0 max-[670px]:w-[350px]  ">
               <img
                 src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Background"

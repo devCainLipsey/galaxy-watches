@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
     text-white py-8"
       >
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="col-span-1 lg:col-span-1">
+          <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-8 ">
+            <div className="col-span-1 lg:col-span-1 ">
               <h2 className="text-xl font-bold mb-4">Quick Links</h2>
               <ul className="text-sm inline-block">
                 <li className="mb-2 group w-5">
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            <div className="col-span-1 lg:col-span-1">
+            <div className="col-span-1 lg:col-span-1 ">
               <h2 className="text-xl font-bold mb-4">Follow Us</h2>
               <div className="flex flex-col w-5  space-y-4">
                 <a href="#" className="text-lg hover:text-blue-500">
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="col-span-1 xl:col-span-1  ">
+            <div className="col-span-1 md:col-span-2  xl:col-span-1  ">
               <h2 className="text-xl font-bold mb-4">Subscribe</h2>
               <p className="text-sm mb-4">
                 Subscribe to our newsletter for the latest updates and offers.
