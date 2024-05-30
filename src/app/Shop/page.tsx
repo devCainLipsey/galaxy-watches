@@ -116,7 +116,7 @@ const Shop: React.FC = () => {
           <FilterCard onChange={handleFilterChange} />
         </div>
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 gap-16  max-[850px]:grid-cols-1 min-[850px]:grid-cols-2  min-[850px]:gap-20    xl:grid-cols-3 xl:gap-16">
             {watches.map((watch) => (
               <WatchCard
                 key={watch.id}

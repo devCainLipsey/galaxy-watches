@@ -19,7 +19,7 @@ const DetailsDisplay: React.FC<{ mainImage: string; thumbnails: string[] }> = ({
             key={index}
             src={thumbnail}
             alt={`Thumbnail ${index}`}
-            className="w-1/3 md:w-1/4 cursor-pointer rounded-3xl mb-5 hover:-translate-y-4 duration-300"
+            className="w-1/2  sm:w-1/3 md:w-1/4 cursor-pointer rounded-3xl mb-5 hover:-translate-y-4 duration-300"
           />
         ))}
       </div>
