@@ -57,17 +57,17 @@ const CartItem: React.FC<CartItemProps> = ({
   const total = price * itemQuantity;
 
   return (
-    <div className="bg-black p-4 rounded-lg shadow-md flex items-center justify-between mb-4">
-      <div className="flex items-center flex-grow">
-        <img src={imageUrl} alt={name} className="w-52 h-auto rounded-3xl" />
-        <div className="ml-4">
-          <h2 className="text-lg text-white font-semibold">{name}</h2>
-          <p className="text-xl text-green-500 font-semibold inline">
-            ${price}
-          </p>
+    <div className="bg-black p-4 rounded-lg shadow-md flex items-center justify-between mb-4  ">
+      <div className="">
+        <img src={imageUrl} alt={name} className=" w-52  h-auto rounded-3xl" />
+        <div className="">
+          <h2 className="text-lg text-md text-left text-white font-semibold ">
+            {name}
+          </h2>
+          <p className="text-xl text-green-500 font-semibold ">${price}</p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mr-32">
+      <div className="flex flex-col items-center justify-center sm:mr-32 mr-5 ">
         <label className="text-lg text-white text-center font-semibold mb-2">
           Quantity:
         </label>
@@ -90,7 +90,7 @@ const CartItem: React.FC<CartItemProps> = ({
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center mr-20">
+      <div className="flex flex-col items-center mr-20   ">
         <label className="text-lg text-white font-semibold mb-2">Total:</label>
         <div className="text-lg text-green-500 font-semibold">${total}</div>
       </div>
