@@ -55,7 +55,7 @@ const Cart: React.FC = () => {
             </Link>
           </>
         ) : (
-          <div className="flex flex-col">
+          <div className="flex flex-col max-[847px]:items-center">
             {cartItems.map((item) => (
               <CartItem
                 key={item.id}

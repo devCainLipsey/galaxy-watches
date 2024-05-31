@@ -57,17 +57,23 @@ const CartItem: React.FC<CartItemProps> = ({
   const total = price * itemQuantity;
 
   return (
-    <div className="bg-black p-4 rounded-lg shadow-md flex items-center justify-between mb-4  ">
-      <div className="">
-        <img src={imageUrl} alt={name} className=" w-52  h-auto rounded-3xl" />
+    <div className="bg-black p-4 rounded-3xl shadow-md min-[847px]:flex items-center mb-4 max-[847px]:w-[25rem]   border-2 border-blue-500 ">
+      <div className="mr-5">
+        <img
+          src={imageUrl}
+          alt={name}
+          className="w-[40rem] h-auto rounded-3xl max-[847px]:w-96 max-[847px]:ml-2.5"
+        />
         <div className="">
-          <h2 className="text-lg text-md text-left text-white font-semibold ">
+          <h2 className="text-lg text-md text-left text-white font-semibold max-[847px]:text-center ">
             {name}
           </h2>
-          <p className="text-xl text-green-500 font-semibold ">${price}</p>
+          <p className="text-xl text-green-500 font-semibold max-[847px]:text-center ">
+            ${price}
+          </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center sm:mr-32 mr-5 ">
+      <div className="w-full flex flex-col items-center justify-center mr-32 max-[847px]:mt-5 max-[847px]:-ml-1.5 ">
         <label className="text-lg text-white text-center font-semibold mb-2">
           Quantity:
         </label>
@@ -90,12 +96,12 @@ const CartItem: React.FC<CartItemProps> = ({
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center mr-20   ">
+      <div className="w-full flex flex-col items-center max-[847px]:mt-5 mr-20 max-[847px]:-ml-2 ">
         <label className="text-lg text-white font-semibold mb-2">Total:</label>
         <div className="text-lg text-green-500 font-semibold">${total}</div>
       </div>
       <button
-        className="px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc] ml-4"
+        className="px-4 py-2 bg-[#8554c7] text-white rounded-3xl hover:bg-[#cf0cbc] ml-4 max-[847px]:ml-[17rem]"
         onClick={handleRemoveFromCart}
       >
         Remove
