@@ -57,7 +57,7 @@ const CartItem: React.FC<CartItemProps> = ({
   const total = price * itemQuantity;
 
   return (
-    <div className="bg-black p-4 rounded-3xl shadow-md min-[847px]:flex items-center mb-4 max-[847px]:w-[25rem]   border-2 border-blue-500 ">
+    <div className="bg-black p-4 rounded-3xl shadow-md min-[847px]:flex items-center mb-4 max-[847px]:w-[25rem]   ">
       <div className="mr-5">
         <img
           src={imageUrl}

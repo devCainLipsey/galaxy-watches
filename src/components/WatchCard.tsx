@@ -37,12 +37,12 @@ const WatchCard: React.FC<{
 
   return (
     <>
-      <div className="bg-black shadow-md rounded-3xl p-6 w-96">
+      <div className="bg-black shadow-md rounded-3xl p-6 w-96 ">
         <Link href={`/Details?id=${id}`}>
           <img
             src={imageSrc}
             alt="Product"
-            className="w-full h-64 object-cover rounded-3xl mb-4 hover:scale-105 duration-300"
+            className="w-full h-64 object-cover rounded-3xl mb-4 hover:scale-105 duration-300 "
           />
         </Link>
         <Link href={`/Details?id=${id}`}>

@@ -5,7 +5,7 @@ const DetailsDisplay: React.FC<{ mainImage: string; thumbnails: string[] }> = ({
   thumbnails,
 }) => {
   return (
-    <div className="w-full bg-black mt-5  py-5 px-5 rounded-t-3xl">
+    <div className="w-full bg-black mt-5  py-5 px-5 rounded-t-3xl ">
       <div className="w-full md:w-2/3 mx-auto">
         <img
           src={mainImage}
