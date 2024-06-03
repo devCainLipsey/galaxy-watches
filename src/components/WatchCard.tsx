@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "@/redux/features/cartSlice";
@@ -39,10 +40,12 @@ const WatchCard: React.FC<{
     <>
       <div className="bg-black shadow-md rounded-3xl p-6 w-96 ">
         <Link href={`/Details?id=${id}`}>
-          <img
+          <Image
             src={imageSrc}
             alt="Product"
             className="w-full h-64 object-cover rounded-3xl mb-4 hover:scale-105 duration-300 "
+            width={790}
+            height={489}
           />
         </Link>
         <Link href={`/Details?id=${id}`}>

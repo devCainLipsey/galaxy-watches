@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import WatchCard from "@/components/WatchCard";
@@ -21,13 +22,15 @@ const Home: React.FC = () => {
         <div className="flex flex-col justify-center items-center">
           <div className="w-full h-96 rounded-lg overflow-hidden relative">
             <div className="absolute inset-0 bg-black opacity-50 "></div>
-
             {/* Overlay */}
-            <img
-              src="https://images.unsplash.com/photo-1570294438100-bbb766244bc0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress"
+            <Image
+              src="https://images.unsplash.com/photo-1570294438100-bbb766244bc0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Background"
               className="w-full h-full object-cover rounded-md"
+              width={1920}
+              height={1080}
             />
+            className="w-full h-full object-cover rounded-md"
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-6xl  font-galaxy text-center text-white">
                 Welcome to Galaxy Watches
@@ -62,21 +65,21 @@ const Home: React.FC = () => {
             <div className="mt-10 flex flex-wrap justify-center gap-20">
               <WatchCard
                 id={1}
-                imageSrc="https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress"
+                imageSrc="https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 name="TechNova Pro Series"
                 price={100}
                 starRating={4}
               />
               <WatchCard
                 id={2}
-                imageSrc="https://images.unsplash.com/photo-1698729617018-7475086abd54?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress"
+                imageSrc="https://images.unsplash.com/photo-1698729617018-7475086abd54?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 name="Infinity Pulse Tracker"
                 price={150}
                 starRating={5}
               />
               <WatchCard
                 id={3}
-                imageSrc="https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress"
+                imageSrc="https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 name="Heritage Navigator"
                 price={120}
                 starRating={3}
@@ -108,10 +111,12 @@ const Home: React.FC = () => {
           {/* Review Slider Section */}
           <div className=" mt-40 relative ml-[33rem] max-[1300px]:ml-[5rem] max-[790px]:ml-[4.5rem]  max-[790px]:w-[600px]  max-[670px]:w-[450px] max-[670px]:ml-[2.5rem]">
             <div className="absolute inset-0 max-[670px]:w-[350px]  ">
-              <img
-                src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress"
+              <Image
+                src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Background"
                 className="w-full h-full object-cover rounded-2xl scale-150  -translate-x-[21rem] max-[1300px]:hidden"
+                width={2371}
+                height={1581}
               />
             </div>
             <ReviewSlider />
@@ -119,7 +124,7 @@ const Home: React.FC = () => {
           {/* About Us Section */}
           <div className="mt-60 mb-20 flex justify-center">
             <AboutUsCard
-              imageSrc="https://images.unsplash.com/photo-1680113727062-8a118574b782?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress"
+              imageSrc="https://images.unsplash.com/photo-1680113727062-8a118574b782?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               heading="About Us"
             />
           </div>

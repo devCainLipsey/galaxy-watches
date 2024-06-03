@@ -24,7 +24,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 4,
     description: "Description for TechNova Pro Series",
     imageSrc: [
-      "https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1698729616586-3ffcaa2c10f8?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
   2: {
@@ -34,7 +34,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 5,
     description: "Description for Infinity Pulse Tracker",
     imageSrc: [
-      "https://images.unsplash.com/photo-1698729617018-7475086abd54?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1698729617018-7475086abd54?q=80&w=2376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     ],
   },
 
@@ -45,7 +45,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 4,
     description: "Description for Heritage Navigator",
     imageSrc:
-      "https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1461141346587-763ab02bced9?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   4: {
     id: "4",
@@ -54,7 +54,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 4,
     description: "Description for Zenith Wave",
     imageSrc:
-      "https://images.unsplash.com/photo-1642101373432-a9c683c34902?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1642101373432-a9c683c34902?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   5: {
     id: "5",
@@ -63,7 +63,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 5,
     description: "Description for VortexX Tracker",
     imageSrc:
-      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   6: {
     id: "6",
@@ -72,7 +72,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 4,
     description: "Description for Elegance Elite",
     imageSrc:
-      "https://images.unsplash.com/photo-1617043593449-c881f876a4b4?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1617043593449-c881f876a4b4?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   7: {
     id: "7",
@@ -81,7 +81,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 4,
     description: "Description for StellarSync Elite",
     imageSrc:
-      "https://images.unsplash.com/photo-1575125069494-6a0c5819d340?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1575125069494-6a0c5819d340?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   8: {
     id: "8",
@@ -90,7 +90,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 5,
     description: "Description for TitanX Chrono",
     imageSrc:
-      "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1632794716789-42d9995fb5b6?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   9: {
     id: "9",
@@ -99,7 +99,7 @@ const watchDetails: Record<string, watchDetails> = {
     starRating: 4,
     description: "Description for FusionTech",
     imageSrc:
-      "https://images.unsplash.com/photo-1669480380743-f76990b9bc44?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1669480380743-f76990b9bc44?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 };
 

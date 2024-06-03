@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Image from "next/image";
 
 const AboutUsCard: React.FC<{
   imageSrc: string;
@@ -7,10 +8,12 @@ const AboutUsCard: React.FC<{
   return (
     <>
       <div className="w-3/4 flex items-center justify-center bg-black shadow-md rounded-3xl p-6">
-        <img
+        <Image
           src={imageSrc}
           alt="About Us"
           className="w-1/3 h-auto object-cover rounded-l-3xl mr-6 max-[1700px]:hidden"
+          width={2565}
+          height={3206}
         />
         <div className="relative px-6">
           <div

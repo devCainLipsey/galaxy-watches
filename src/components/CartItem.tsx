@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { removeItemFromCart } from "@/redux/features/cartSlice";
 import { RootState } from "@/redux/features/store"; // Import RootState
@@ -59,10 +60,12 @@ const CartItem: React.FC<CartItemProps> = ({
   return (
     <div className="bg-black p-4 rounded-3xl shadow-md min-[847px]:flex items-center mb-4 max-[847px]:w-[25rem]   ">
       <div className="mr-5">
-        <img
+        <Image
           src={imageUrl}
           alt={name}
           className="w-[40rem] h-auto rounded-3xl max-[847px]:w-96 max-[847px]:ml-2.5"
+          width={2367}
+          height={1573}
         />
         <div className="">
           <h2 className="text-lg text-md text-left text-white font-semibold max-[847px]:text-center ">

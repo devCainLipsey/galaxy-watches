@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
@@ -22,7 +23,7 @@ const reviews: Review[] = [
       "\"I've been using my Galaxy Watch for a week now, and I'm blown away by its features! From tracking my workouts to receiving notifications seamlessly, this watch has become an essential part of my daily routine.\"",
     rating: 5,
     imageUrl:
-      "https://images.unsplash.com/photo-1522307837370-cc113a36b784?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1522307837370-cc113a36b784?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ const reviews: Review[] = [
       '"As a tech enthusiast, I\'ve tried numerous smartwatches, but Galaxy Watches truly stands out. The intuitive interface and smooth performance make it a joy to use."',
     rating: 4,
     imageUrl:
-      "https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1503235930437-8c6293ba41f5?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
@@ -42,7 +43,7 @@ const reviews: Review[] = [
       '"I was hesitant to switch to a smartwatch, but Galaxy Watches has completely changed my mind. Plus, the customizable watch faces allow me to express my style effortlessly. 5/5 would recommend!"',
     rating: 5,
     imageUrl:
-      "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=compress",
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -110,10 +111,12 @@ const ReviewSlider: React.FC = () => {
                     <p className="text-black text-md ml-5 max-[670px]:text-start">
                       {review.author}
                     </p>
-                    <img
+                    <Image
                       src={review.imageUrl}
                       alt={review.header}
                       className="w-52 h-auto mt-5 rounded-3xl max-[670px]:items-center"
+                      width={2370}
+                      height={1580}
                     />
                     <p className="text-black mt-5 max-[670px]:text-sm">
                       {review.content}
