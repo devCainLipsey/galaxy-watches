@@ -160,7 +160,6 @@ const CheckoutForm: React.FC = () => {
               className="mt-1 p-2 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
               required
             >
-              {" "}
               {/* OPTIOINS FOR COUNTRIES GO HERE */}
               <option value="United States">United States</option>
               <option value="Afghanistan">Afghanistan</option>
@@ -291,12 +290,14 @@ const CheckoutForm: React.FC = () => {
               <option value="Kenya">Kenya</option>
               <option value="Kiribati">Kiribati</option>
               <option value="Democratic People's Republic of Korea">
-                Korea, Democratic People's Republic of
+                Korea, Democratic People&rsquo;s Republic of
               </option>
               <option value="Korea">Korea, Republic of</option>
               <option value="Kuwait">Kuwait</option>
               <option value="Kyrgyzstan">Kyrgyzstan</option>
-              <option value="Lao">Lao People's Democratic Republic</option>
+              <option value="Lao">
+                Lao People&rsquo;s Democratic Republic
+              </option>
               <option value="Latvia">Latvia</option>
               <option value="Lebanon">Lebanon</option>
               <option value="Lesotho">Lesotho</option>
@@ -475,7 +476,6 @@ const CheckoutForm: React.FC = () => {
                 className="mt-1 p-2 block w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
                 required
               >
-                {" "}
                 {/* OPTIONS FOR STATES GO HERE */}
                 <option value="---">---</option>
                 <option value="Alabama">Alabama</option>

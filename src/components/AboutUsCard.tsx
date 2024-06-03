@@ -5,6 +5,35 @@ const AboutUsCard: React.FC<{
   imageSrc: string;
   heading: string;
 }> = ({ imageSrc, heading }) => {
+  const firstP: string =
+    "At Galaxy Watches, we transcend the conventional boundaries of " +
+    "timekeeping, blending cutting-edge technology with timeless " +
+    "craftsmanship. Our journey began with a vision to redefine elegance " +
+    "and functionality in the world of wristwear. Each timepiece we craft " +
+    "is a testament to our unwavering commitment to excellence, " +
+    "meticulously engineered to accompany you through every moment of " +
+    "your life's journey.";
+
+  const secondP: string =
+    "Driven by innovation and inspired by the wonders of the cosmos, our " +
+    "watches seamlessly integrate advanced features with classic design " +
+    "elements. From sleek and sophisticated designs to rugged sporty " +
+    "models, our diverse collection caters to every individual's style " +
+    "and needs. With precision engineering and attention to detail, " +
+    "Galaxy Watches stand as a symbol of sophistication and reliability, " +
+    "empowering you to navigate through the modern world with confidence " +
+    "and style.";
+
+  const thirdP: string =
+    "Embrace the fusion of style and technology with Galaxy Watches, " +
+    "where each timepiece tells a story of innovation and craftsmanship. " +
+    "Whether you seek a statement accessory for a formal occasion or a " +
+    "reliable companion for your active lifestyle, our watches are " +
+    "designed to elevate your experience and redefine the way you " +
+    "perceive time. Join us on a journey through the cosmos of horology, " +
+    "where imagination knows no bounds, and every tick of the clock is a " +
+    "testament to our commitment to excellence.";
+
   return (
     <>
       <div className="w-3/4 flex items-center justify-center bg-black shadow-md rounded-3xl p-6">
@@ -23,37 +52,11 @@ const AboutUsCard: React.FC<{
           <h3 className="text-4xl text-indigo-300  font-semibold mb-4">
             {heading}
           </h3>
-          <p className="text-white">
-            At Galaxy Watches, we transcend the conventional boundaries of
-            timekeeping, blending cutting-edge technology with timeless
-            craftsmanship. Our journey began with a vision to redefine elegance
-            and functionality in the world of wristwear. Each timepiece we craft
-            is a testament to our unwavering commitment to excellence,
-            meticulously engineered to accompany you through every moment of
-            your life's journey.
-          </p>
+          <p className="text-white">{firstP}</p>
           <br />
-          <p className="text-white">
-            Driven by innovation and inspired by the wonders of the cosmos, our
-            watches seamlessly integrate advanced features with classic design
-            elements. From sleek and sophisticated designs to rugged sporty
-            models, our diverse collection caters to every individual's style
-            and needs. With precision engineering and attention to detail,
-            Galaxy Watches stand as a symbol of sophistication and reliability,
-            empowering you to navigate through the modern world with confidence
-            and style.
-          </p>
+          <p className="text-white">{secondP}</p>
           <br />
-          <p className="text-white">
-            Embrace the fusion of style and technology with Galaxy Watches,
-            where each timepiece tells a story of innovation and craftsmanship.
-            Whether you seek a statement accessory for a formal occasion or a
-            reliable companion for your active lifestyle, our watches are
-            designed to elevate your experience and redefine the way you
-            perceive time. Join us on a journey through the cosmos of horology,
-            where imagination knows no bounds, and every tick of the clock is a
-            testament to our commitment to excellence.
-          </p>
+          <p className="text-white">{thirdP}</p>
         </div>
       </div>
     </>

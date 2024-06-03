@@ -30,12 +30,11 @@ const Home: React.FC = () => {
               width={1920}
               height={1080}
             />
-            className="w-full h-full object-cover rounded-md"
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-6xl  font-galaxy text-center text-white">
                 Welcome to Galaxy Watches
               </h1>
-              <p className="mt-4 text-3xl text-white  max-[730px]:text-balance max-[730px]:text-center  ">
+              <p className="mt-4 text-3xl text-white  max-[730px]:text-balance max-[730px]:text-center">
                 Where modern technology meets timeless style
               </p>
               <Link href="/Shop">

@@ -15,7 +15,7 @@ const ContactSuccessOverlay: React.FC<ContactSuccessOverlayProps> = ({
           Message Recieved
           <IoIosCheckmarkCircle className="ml-2 text-green-500" />
         </h2>
-        <p className="mb-5">We'll Get Back To Soon</p>
+        <p className="mb-5">We&apos;ll get back to you shortly.</p>
 
         <button
           className="px-4 py-2 bg-gray-900 text-white rounded-md hover:bg-gray-800"
