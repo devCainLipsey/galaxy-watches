@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -145,4 +145,10 @@ const DetailsPage: React.FC = () => {
   );
 };
 
-export default DetailsPage;
+const SuspendedDetailsPage: React.FC = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <DetailsPage />
+  </Suspense>
+);
+
+export default SuspendedDetailsPage;
