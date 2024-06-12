@@ -28,7 +28,7 @@ const NavBar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center">
           <PiWatchThin className="text-white ml-2" size={24} />
-          <span className="text-white font-bold text-lg pl-2">
+          <span className="text-white font-bold text-lg pl-2 max-[410px]:text-sm">
             Galaxy Watches
           </span>
         </div>
@@ -55,7 +55,7 @@ const NavBar: React.FC = () => {
             onClick={closeMenu}
           ></div>
           <div className="bg-black p-8 rounded-md relative z-50 w-80 h-auto border-l-4  border-[#cf0cbc]">
-            <ul className="flex flex-col space-y-4">
+            <ul className="flex flex-col space-y-4 text-center">
               <li>
                 <Link
                   href="/"
@@ -75,10 +75,16 @@ const NavBar: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/Cart" className="text-white" onClick={closeMenu}>
+                <Link
+                  href="/Cart"
+                  className="text-white flex items-center justify-center"
+                  onClick={closeMenu}
+                >
                   <MdOutlineShoppingCart size={40} />
                   {cartTotalCount > 0 && (
-                    <span className="ml-1">{cartTotalCount}</span>
+                    <span className="ml-1 text-[#cf0cbc] text-3xl">
+                      {cartTotalCount}
+                    </span>
                   )}
                 </Link>
               </li>

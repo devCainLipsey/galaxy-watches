@@ -44,7 +44,7 @@ const ContactUsForm: React.FC = () => {
 
   return (
     <>
-      <div className="mt-10 w-3/4 flex items-center justify-center bg-black shadow-md rounded-3xl p-4 relative">
+      <div className="mt-3 mb-20 w-3/4 flex items-center justify-center bg-black shadow-md rounded-3xl p-4 relative">
         <div className="flex-1 px-4">
           <h3 className="text-4xl text-indigo-300 font-semibold mb-10">
             Contact Us

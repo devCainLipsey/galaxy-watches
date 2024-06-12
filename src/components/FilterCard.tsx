@@ -19,7 +19,7 @@ const FilterCard: React.FC<FilterCardProps> = ({ onChange }) => {
   };
 
   return (
-    <div className="fixed left-0 top-20 bg-black p-4 rounded-3xl shadow-md z-10">
+    <div className="fixed left-0 top-20 bg-black p-4 rounded-3xl shadow-md z-10 max-[587px]:sticky">
       <div className="relative">
         <h2
           className="text-lg text-white font-semibold mb-4 cursor-pointer"

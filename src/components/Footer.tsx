@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                 </a>
               </div>
             </div>
-            <div className="col-span-1 md:col-span-2  xl:col-span-1  ">
+            <div className="col-span-1 md:col-span-2  xl:col-span-1">
               <h2 className="text-xl font-bold mb-4">Subscribe</h2>
               <p className="text-sm mb-4">
                 Subscribe to our newsletter for the latest updates and offers.

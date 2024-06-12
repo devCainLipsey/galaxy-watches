@@ -31,10 +31,10 @@ const Home: React.FC = () => {
               height={1080}
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <h1 className="text-6xl  font-galaxy text-center text-white">
+              <h1 className="text-6xl  font-galaxy text-center text-white max-[410px]:text-4xl">
                 Welcome to Galaxy Watches
               </h1>
-              <p className="mt-4 text-3xl text-white  max-[730px]:text-balance max-[730px]:text-center">
+              <p className="mt-4 text-3xl text-white  max-[730px]:text-balance max-[730px]:text-center max-[410px]:text-2xl">
                 Where modern technology meets timeless style
               </p>
               <Link href="/Shop">
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
           <span className="mb-15 h-0.5 bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] opacity-100 transition-opacity w-28 block mx-auto"></span>
 
           {/* Review Slider Section */}
-          <div className=" mt-40 relative ml-[33rem] max-[1300px]:ml-[5rem] max-[790px]:ml-[4.5rem]  max-[790px]:w-[600px]  max-[670px]:w-[450px] max-[670px]:ml-[2.5rem]">
+          <div className=" mt-40 relative ml-[33rem] max-[1300px]:ml-[5rem] max-[790px]:ml-[4.5rem]  max-[790px]:w-[600px]  max-[670px]:w-[450px] max-[670px]:ml-[2.5rem]  max-[490px]:w-[400px] max-[490px]:mr-[1rem]  max-[420px]:w-[350px] max-[420px]:mr-[2rem]">
             <div className="absolute inset-0 max-[670px]:w-[350px]  ">
               <Image
                 src="https://images.unsplash.com/photo-1696688713460-de12ac76ebc6?q=80&w=2371&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

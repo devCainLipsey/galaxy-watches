@@ -10,7 +10,7 @@ const CartTotal: React.FC<CartTotalProps> = ({ subtotal }) => {
   const orderTotal = subtotal + shippingCost;
 
   return (
-    <div className="bg-black p-6 rounded-lg shadow-md mb-4 mt-10">
+    <div className="bg-black p-6 rounded-3xl shadow-md mb-4 mt-10">
       <h2 className="text-2xl text-white text-center font-semibold mb-2">
         Cart Total
       </h2>
@@ -29,7 +29,7 @@ const CartTotal: React.FC<CartTotalProps> = ({ subtotal }) => {
       </p>
       <Link href="/Checkout">
         <div className="text-center">
-          <button className="mt-5 px-4 py-2 bg-[#8554c7] text-white rounded-md hover:bg-[#cf0cbc]">
+          <button className="mt-5 px-4 py-2 bg-[#8554c7] text-white rounded-3xl hover:bg-[#cf0cbc]">
             Proceed to Checkout
           </button>
         </div>

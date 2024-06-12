@@ -36,7 +36,7 @@ const AboutUsCard: React.FC<{
 
   return (
     <>
-      <div className="w-3/4 flex items-center justify-center bg-black shadow-md rounded-3xl p-6">
+      <div className="w-3/4 flex items-center justify-center bg-black shadow-md rounded-3xl p-6 max-[790px]:hidden max-[410px]:hidden">
         <Image
           src={imageSrc}
           alt="About Us"

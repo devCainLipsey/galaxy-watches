@@ -697,7 +697,7 @@ const CheckoutForm: React.FC = () => {
           <div>
             <button
               type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#8554c7] hover:bg-[#cf0cbc]  focus:outline-none focus:ring focus:border-[#cf0cbc]"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-medium text-white bg-[#8554c7] hover:bg-[#cf0cbc]  focus:outline-none focus:ring focus:border-[#cf0cbc]"
             >
               Place Order
             </button>

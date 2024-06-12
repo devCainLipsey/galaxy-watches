@@ -38,7 +38,7 @@ const WatchCard: React.FC<{
 
   return (
     <>
-      <div className="bg-black shadow-md rounded-3xl p-6 w-96 ">
+      <div className="bg-black shadow-md rounded-3xl p-6 w-96 max-[410px]:w-80">
         <Link href={`/Details?id=${id}`}>
           <Image
             src={imageSrc}
@@ -69,9 +69,9 @@ const WatchCard: React.FC<{
           ))}
         </div>
         <div className=" w-80  relative inline-flex group mt-12">
-          <div className="ml-3.5 absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <div className="ml-3.5  max-[410px]:w-60 absolute transition-all duration-100 opacity-30 -inset-px bg-gradient-to-r from-[#8554c7] via-[#cf0cbc] to-[#8554c7] rounded-3xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
           <button
-            className=" w-80 ml-3.5 relative inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white transition-all duration-100 bg-gray-900 font-pj rounded-3xl focus:outline-none  focus:ring-2 focus:ring-offset-0 focus:ring-[#cf0cbc]"
+            className=" w-80 ml-3.5  max-[410px]:w-60 relative inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white transition-all duration-100 bg-gray-900 font-pj rounded-3xl focus:outline-none  focus:ring-2 focus:ring-offset-0 focus:ring-[#cf0cbc]"
             onClick={handleAddToCart}
           >
             <span className="ml-5 group-hover:translate-x-[-1rem] transition-all duration-200 text-center">

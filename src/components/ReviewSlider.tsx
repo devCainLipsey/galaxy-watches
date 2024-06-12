@@ -40,7 +40,7 @@ const reviews: Review[] = [
     header: "Highly Recommended",
     author: "Will Davis",
     content:
-      '"I was hesitant to switch to a smartwatch, but Galaxy Watches has completely changed my mind. Plus, the customizable watch faces allow me to express my style effortlessly. 5/5 would recommend!"',
+      '"I was hesitant to switch to a smartwatch, but Galaxy Watches has completely changed my mind. 5/5 would recommend!"',
     rating: 5,
     imageUrl:
       "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -108,17 +108,17 @@ const ReviewSlider: React.FC = () => {
                       </div>
                     </div>
 
-                    <p className="text-black text-md ml-5 max-[670px]:text-start">
+                    <p className="text-black text-md ml-5 max-[670px]:ml-[0rem] max-[490px]:ml-[0rem]">
                       {review.author}
                     </p>
                     <Image
                       src={review.imageUrl}
                       alt={review.header}
-                      className="w-52 h-auto mt-5 rounded-3xl max-[670px]:items-center"
+                      className="w-52 h-auto mt-5 rounded-3xl max-[670px]:items-center max-[420px]:mt-0 max-[420px]:ml-[0.7rem] "
                       width={2370}
                       height={1580}
                     />
-                    <p className="text-black mt-5 max-[670px]:text-sm">
+                    <p className="text-black mt-5 max-[670px]:text-sm max-[420px]:mt-3">
                       {review.content}
                     </p>
                   </div>
