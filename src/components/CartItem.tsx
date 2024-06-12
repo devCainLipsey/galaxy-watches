@@ -58,7 +58,7 @@ const CartItem: React.FC<CartItemProps> = ({
   const total = price * itemQuantity;
 
   return (
-    <div className="bg-black p-4 rounded-3xl shadow-md min-[847px]:flex items-center mb-4 max-[847px]:w-[25rem]   ">
+    <div className="bg-black p-4 rounded-3xl shadow-md min-[847px]:flex items-center mb-4 max-[847px]:w-[25rem] max-[400px]:w-[20rem]   ">
       <div className="mr-5">
         <Image
           src={imageUrl}
@@ -68,7 +68,7 @@ const CartItem: React.FC<CartItemProps> = ({
           height={1573}
         />
         <div className="">
-          <h2 className="text-lg text-md text-left text-white font-semibold max-[847px]:text-center ">
+          <h2 className="mt-5 text-lg text-md text-left text-white font-semibold max-[847px]:text-center ">
             {name}
           </h2>
           <p className="text-xl text-green-500 font-semibold max-[847px]:text-center ">
@@ -104,7 +104,7 @@ const CartItem: React.FC<CartItemProps> = ({
         <div className="text-lg text-green-500 font-semibold">${total}</div>
       </div>
       <button
-        className="px-4 py-2 bg-[#8554c7] text-white rounded-3xl hover:bg-[#cf0cbc] ml-4 max-[847px]:ml-[17rem]"
+        className="px-4 py-2 bg-[#8554c7] text-white rounded-3xl hover:bg-[#cf0cbc] ml-4 max-[847px]:ml-[17rem] max-[400px]:ml-[12rem]"
         onClick={handleRemoveFromCart}
       >
         Remove
